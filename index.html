@@ -1,1 +1,63 @@
-<iframe width="100%" height="100%" src="https://ckr01.cfbisd.edu/cgi-bin/blockpage/blockpage.cgi?URL=https://panthercity-lacrosse2020.github.io/jake-oettinger.web/&CAT=Game%20Sites%2F%29&CATNO=33&ACC=you%40cfbmail.com&WHY=Policy%3Dmiddle%3B+AD+Group%3Dcfblab%2Fperstudents&MOD=2&APP=&ISO=0&IPA=69.420.420.68&RAW=https%3A%2F%2Fwww.bing.com&AUTH0=%2CCustom-URL+--%3E+%28*.bing.com%2F%29&PGE=https%3A%2F%2Fckr01.cfbisd.edu%2Fcgi-bin%2Fblockpage%2Fblockpage.cgi&STR=null%2Cnull%2Cnull%2Cnull%2Cnull&SRV=null&AUTH1=%2Cwww.bing.com%2CCustom-URL+--%3E+%28*.bing.com%2F%29">
+<!DOCTYPE html><html>
+<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+
+<ul id="myMenu">
+  <li><a href="Bitlife.html">HTML</a></li>
+  <li><a href="#">CSS</a></li>
+  <li><a href="#">JavaScript</a></li>
+  <li><a href="#">PHP</a></li>
+  <li><a href="#">Python</a></li>
+  <li><a href="#">jQuery</a></li>
+  <li><a href="#">SQL</a></li>
+  <li><a href="#">Bootstrap</a></li>
+  <li><a href="#">Node.js</a></li>
+</ul><style>
+  /* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the navigation links */
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+  </style>
+  <script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</html>
