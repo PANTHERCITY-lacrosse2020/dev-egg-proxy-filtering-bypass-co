@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Protected Page</title>
+<style>
+#content {
+    display: none;
+}
+</style>
+</head>
+<body>
+
+<input type="password" id="password">
+<button onclick="checkPassword()">Login</button>
+
+<div id="content">
+  <h2>Welcome!</h2>
+  <p>This is the protected<a href="2nd-puzzle.html">.</a> content.</p>
+</div>
+        <style>
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+</style>
+
+<script>
+var correctPassword = "Cart0n0f3ggs";
+
+function checkPassword() {
+    var enteredPassword = document.getElementById("password").value;
+    if (enteredPassword === correctPassword) {
+        document.getElementById("content").style.display = "block";
+    } else {
+        alert("Incorrect password!");
+    }
+}
+</script>
+
+</body>
+</html>
